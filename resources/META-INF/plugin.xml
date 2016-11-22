@@ -5,27 +5,28 @@
   <vendor email="wangtotang@gmail.com" url="https://github.com/wangtotang">wangtotang</vendor>
 
   <description><![CDATA[
-      An intellij idea plug to create Dagger class easily.<br/><br/>
-      P.S. DaggerHelper: An android studio plugin to help you create dagger class
-      <a href="https://github.com/drakeet/MultiType">https://github.com/drakeet/MultiType</a>
+      DaggerHelper: An android studio plugin to help you create dagger class
+      <a href="https://github.com/wangtotang/DaggerHelper">https://github.com/wangtotang/DaggerHelper</a>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+     Version 1.0.0 – November 22nd 2016 : Initial release DaggerHelper.
     ]]>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="141.0"/>
+  <idea-version since-build="131"/>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
   -->
+  <depends>com.intellij.modules.lang</depends>
+  <depends>org.jetbrains.android</depends>
 
   <extensions defaultExtensionNs="com.intellij">
+    <defaultProjectTypeProvider type="Android"/>
     <!-- Add your extensions here -->
     <internalFileTemplate name="TActivity"/>
     <internalFileTemplate name="TApplication"/>
