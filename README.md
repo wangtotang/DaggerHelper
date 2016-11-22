@@ -4,7 +4,7 @@
 
 ## Installation
 
-你可以下载DaggerHelper.jar, 然后按照步骤进行安装: Preferences -> Plugin -> Install plugin from disk.
+你可以下载[DaggerHelper.jar](https://github.com/wangtotang/DaggerHelper/raw/master/DaggerHelper.jar), 然后按照步骤进行安装: Preferences -> Plugin -> Install plugin from disk.
 
 ## Usage
 
