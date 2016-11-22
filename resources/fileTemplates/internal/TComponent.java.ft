@@ -1,0 +1,15 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import dagger.Component;
+
+#parse("File Header.java")
+
+@PerPage
+@Component(
+        dependencies = ApplicationComponent.class,
+        modules = {PageModule.class,${NAME}Module.class}
+)
+public interface ${NAME}Component extends PageComponent {
+
+
+}

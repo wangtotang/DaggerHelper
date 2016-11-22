@@ -1,0 +1,12 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+import dagger.Module;
+
+#parse("File Header.java")
+
+@Module
+public class ${NAME} {
+
+
+}
+

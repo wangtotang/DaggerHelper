@@ -1,0 +1,18 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+
+public abstract class ${NAME}Fragment extends Fragment {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        inject(((${NAME}Application) getActivity().getApplication()).component());
+    }
+
+    public abstract void inject(ApplicationComponent appComponent);
+
+}

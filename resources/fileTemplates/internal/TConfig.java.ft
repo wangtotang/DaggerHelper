@@ -1,0 +1,13 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+
+public class Config {
+
+    public static class IpConfig {
+        public static final String IP_ADDRESS = "192.168.15.65";
+        public static final String PORT = "8000";
+    }
+
+}
+

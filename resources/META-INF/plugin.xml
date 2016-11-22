@@ -1,0 +1,55 @@
+<idea-plugin version="2">
+  <id>com.tong.plugin.dagger.helper</id>
+  <name>DaggerHelper</name>
+  <version>1.0.0</version>
+  <vendor email="wangtotang@gmail.com" url="https://github.com/wangtotang">wangtotang</vendor>
+
+  <description><![CDATA[
+      An intellij idea plug to create Dagger class easily.<br/><br/>
+      P.S. DaggerHelper: An android studio plugin to help you create dagger class
+      <a href="https://github.com/drakeet/MultiType">https://github.com/drakeet/MultiType</a>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <internalFileTemplate name="TActivity"/>
+    <internalFileTemplate name="TApplication"/>
+    <internalFileTemplate name="TApplicationComponent"/>
+    <internalFileTemplate name="TApplicationModule"/>
+    <internalFileTemplate name="TConfig"/>
+    <internalFileTemplate name="TFragment"/>
+    <internalFileTemplate name="TPageComponent"/>
+    <internalFileTemplate name="TPageModule"/>
+    <internalFileTemplate name="TPerPage"/>
+    <internalFileTemplate name="TComponent"/>
+    <internalFileTemplate name="TModule"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="NewDir.NewModuleDirAction" class="com.tong.actions.NewModuleDirAction" text="Dagger Module"
+            description="create module dir">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+    <action id="NewDir.NewProjectDirAction" class="com.tong.actions.NewProjectDirAction" text="Dagger Project"
+            description="create project dir">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>

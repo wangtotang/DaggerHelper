@@ -1,0 +1,32 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+
+import android.app.Application;
+import android.content.Context;
+
+public class ${NAME} extends Application {
+
+    private ApplicationComponent appComponent;
+    private static Context context;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        appComponent = DaggerApplicationComponent.builder()
+                .applicationModule(new ApplicationModule(this))
+                .build();
+        context = appComponent.application();
+    }
+
+    public ApplicationComponent component() {
+        return appComponent;
+    }
+
+    public static Context getAppContext(){
+        return context;
+    }
+
+}
+
+

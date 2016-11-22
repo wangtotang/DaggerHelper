@@ -1,0 +1,25 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+
+import android.app.Application;
+import javax.inject.Singleton;
+import dagger.Module;
+import dagger.Provides;
+
+@Module
+public class ApplicationModule {
+
+    private final Application application;
+
+    public ApplicationModule(Application application){
+        this.application = application;
+    }
+
+    @Singleton
+    @Provides
+    public Application application(){
+        return application;
+    }
+
+}

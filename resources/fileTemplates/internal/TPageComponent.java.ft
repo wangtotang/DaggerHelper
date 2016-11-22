@@ -1,0 +1,16 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+
+#parse("File Header.java")
+
+import android.app.Activity;
+import android.support.v4.app.Fragment;
+import dagger.Component;
+
+@PerPage
+@Component(dependencies = ApplicationComponent.class, modules = PageModule.class)
+public interface PageComponent {
+
+    Activity activity();
+    Fragment fragment();
+
+}
