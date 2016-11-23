@@ -1,11 +1,10 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
-#parse("File Header.java")
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import javax.inject.Scope;
 
+#parse("File Header.java")
 @Scope
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PerPage {

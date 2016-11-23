@@ -3,7 +3,6 @@
 import dagger.Component;
 
 #parse("File Header.java")
-
 @PerPage
 @Component(
         dependencies = ApplicationComponent.class,

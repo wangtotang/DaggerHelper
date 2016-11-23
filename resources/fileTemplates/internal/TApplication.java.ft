@@ -1,10 +1,9 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
-#parse("File Header.java")
-
 import android.app.Application;
 import android.content.Context;
 
+#parse("File Header.java")
 public class ${NAME} extends Application {
 
     private ApplicationComponent appComponent;

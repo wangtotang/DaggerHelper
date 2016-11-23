@@ -1,10 +1,9 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
-#parse("File Header.java")
-
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 
+#parse("File Header.java")
 public abstract class ${NAME}Fragment extends Fragment {
 
     @Override

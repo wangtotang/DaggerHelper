@@ -55,7 +55,7 @@ public class NewModuleDirAction extends BaseAction {
         createProjectCls(module,prefix+"Module","TModule.java");
 
         module.createSubdirectory("activity");
-        module.createSubdirectory("interactor");
+        module.createSubdirectory("provider");
         module.createSubdirectory("presenter");
 
         return  createdElement;

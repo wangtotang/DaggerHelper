@@ -1,12 +1,11 @@
 #if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
 
-#parse("File Header.java")
-
 import android.app.Activity;
 import android.support.v4.app.Fragment;
 import dagger.Module;
 import dagger.Provides;
 
+#parse("File Header.java")
 @Module
 public class PageModule {
 

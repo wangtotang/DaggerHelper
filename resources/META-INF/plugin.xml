@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.tong.plugin.dagger.helper</id>
   <name>DaggerHelper</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <vendor email="wangtotang@gmail.com" url="https://github.com/wangtotang">wangtotang</vendor>
 
   <description><![CDATA[
@@ -11,6 +11,7 @@
 
   <change-notes><![CDATA[
      Version 1.0.0 – November 22nd 2016 : Initial release DaggerHelper.
+     Version 1.0.1 – November 23rd 2016 : modify some dirs.
     ]]>
   </change-notes>
 

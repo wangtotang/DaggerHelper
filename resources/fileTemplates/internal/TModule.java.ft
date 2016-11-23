@@ -3,7 +3,6 @@
 import dagger.Module;
 
 #parse("File Header.java")
-
 @Module
 public class ${NAME} {
 
