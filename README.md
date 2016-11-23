@@ -23,13 +23,13 @@ dependencies {
 
 在 `src/main/java/${你的包名}`下，鼠标右键 New -> Dagger Project,输入类前缀，点击ok即可生成
 
-![Dagger Project](https://raw.githubusercontent.com/GosuncnMobile/BaseLibrary/master/images/dagger%20project.jpg)
+![Dagger Project](https://github.com/wangtotang/DaggerHelper/blob/master/images/dagger%20project.jpg)
 
 #### 3.生成模块目录和Component/Module
 
 在 `module`下，鼠标右键 New -> Dagger Module,输入类前缀，点击ok即可生成
 
-![Dagger Module](https://raw.githubusercontent.com/GosuncnMobile/BaseLibrary/master/images/dagger%20module.jpg)
+![Dagger Module](https://github.com/wangtotang/DaggerHelper/blob/master/images/dagger%20module.jpg)
 
 ## Bugs and Feedback
 

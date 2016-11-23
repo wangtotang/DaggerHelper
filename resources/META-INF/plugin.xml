@@ -5,13 +5,15 @@
   <vendor email="wangtotang@gmail.com" url="https://github.com/wangtotang">wangtotang</vendor>
 
   <description><![CDATA[
-      DaggerHelper: An android studio plugin to help you create dagger class
+      <p>DaggerHelper: An android studio plugin to help you create dagger class</p>
       <a href="https://github.com/wangtotang/DaggerHelper">https://github.com/wangtotang/DaggerHelper</a>
     ]]></description>
 
   <change-notes><![CDATA[
-     Version 1.0.0 – November 22nd 2016 : Initial release DaggerHelper.
-     Version 1.0.1 – November 23rd 2016 : modify some dirs.
+      <ul>
+          <li>1.0.0 – Nov 22nd,2016 : Initial release DaggerHelper.</li>
+          <li>1.0.1 – Nov 23rd,2016 : modify some dirs.</li>
+      </ul>
     ]]>
   </change-notes>
 
