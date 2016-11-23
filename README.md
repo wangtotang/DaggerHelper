@@ -1,6 +1,7 @@
-# DaggerHelper: An android studio plugin to help you create dagger class easily
+# DaggerHelper:
+## An android studio plugin to help you create dagger class easily
 
-    自动生成Dagger Component和Module,还有生成一些目录。
+    用于自动生成Dagger Component和Module以及一些目录
 
 ## Installation
 
@@ -8,9 +9,27 @@
 
 ## Usage
 
-在packge/directory上右键 New -> Dagger Project/Module, 自动生成。
+#### 1.将dagger添加到classpath
 
-PS: 请确保工程classpath添加了Dagger。
+```groovy
+dependencies {
+    //dagger2
+    compile "com.google.dagger:dagger:${daggerVersion}"
+    annotationProcessor  "com.google.dagger:dagger-compiler:${daggerVersion}"
+}
+```
+
+#### 2.生成工程目录和基本类
+
+在 `src/main/java/${你的包名}`下，鼠标右键 New -> Dagger Project,输入类前缀，点击ok即可生成
+
+![Dagger Project](https://raw.githubusercontent.com/GosuncnMobile/BaseLibrary/master/images/dagger%20project.jpg)
+
+#### 3.生成模块目录和Component/Module
+
+在 `module`下，鼠标右键 New -> Dagger Module,输入类前缀，点击ok即可生成
+
+![Dagger Module](https://raw.githubusercontent.com/GosuncnMobile/BaseLibrary/master/images/dagger%20module.jpg)
 
 ## Bugs and Feedback
 
@@ -34,4 +53,3 @@ PS: 请确保工程classpath添加了Dagger。
 
 
  [issues]:https://github.com/wangtotang/DaggerHelper/issues
-
