@@ -7,7 +7,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
-import javax.swing.text.JTextComponent;
 import java.awt.*;
 
 /**
@@ -16,7 +15,7 @@ import java.awt.*;
 public class BaseDialog extends DialogWrapper {
 
     private String message;
-    private JTextComponent classNameField;
+    private JTextField classNameField;
 
     public BaseDialog(@NotNull String message,@Nullable Project project) {
         super(project);
@@ -43,6 +42,19 @@ public class BaseDialog extends DialogWrapper {
     @NotNull
     public String getClassNamePrefix(){
         return classNameField.getText();
+    }
+
+    @Override
+    protected void doOKAction() {
+        String text = classNameField.getText();
+        if (text.length() == 0) {
+            return;
+        }
+        if (!text.matches("[a-zA-z$_\u4e00-\u9fa5][0-9a-zA-z$_\u4e00-\u9fa5]*")) {
+            JOptionPane.showMessageDialog(classNameField, "Java能这样命名吗？", "提示", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+        super.doOKAction();
     }
 
 }
